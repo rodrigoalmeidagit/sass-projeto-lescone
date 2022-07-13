@@ -67,6 +67,18 @@ $s-device: 480px;
 }
 
 // Gerar Classes Offset
+@for $i from 1 through $columns {
+  .offset-#{$i} {
+    margin-left: grid($i, offset);
+    @extend %offset;
+  }
+}
+
+@include device(small) {
+  %offset {
+    margin-left: 0px;
+  }
+}
 
 // Mixin Clearfix
 
