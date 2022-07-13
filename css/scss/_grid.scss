@@ -81,5 +81,13 @@ $s-device: 480px;
 }
 
 // Mixin Clearfix
+@mixin clearFix {
+  &::after,
+  &::before {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
 
 // Mixin Container
