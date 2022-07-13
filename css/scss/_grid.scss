@@ -31,6 +31,15 @@ $s-device: 480px;
 }
 
 // Função Grid
+@function grid($col, $offset: false) {
+  $width: $col / $columns * 100 + '%';
+  $result: calc(#{$width} - #{$gutter});
+  @if $offset == offset {
+    $gutter: $gutter / 2;
+    $result: calc(#{$width} + #{$gutter});
+  }
+  @return $result;
+}
 
 // Gerar Classes Grid
 
