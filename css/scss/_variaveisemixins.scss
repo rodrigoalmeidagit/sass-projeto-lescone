@@ -8,3 +8,8 @@ $open-sign: hsl(134, 91%, 38%);
 // Fonts
 $font-primary: 'PT Mono', monospace;
 $font-second: 'Aref Ruqaa', serif;
+
+// Function EM
+@function em($pixel, $contexto: 16) {
+  @return $pixel / $contexto + em;
+}
