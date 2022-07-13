@@ -91,3 +91,21 @@ $s-device: 480px;
 }
 
 // Mixin Container
+@mixin container {
+  max-width: $l-device;
+  margin: 0px auto;
+  position: relative;
+  @include device(medium) {
+    max-width: $m-device;
+  }
+  @include device(small) {
+    max-width: $s-device;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  @include clearFix;
+}
+
+.container {
+  @include container;
+}
