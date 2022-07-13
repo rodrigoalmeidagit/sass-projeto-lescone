@@ -13,3 +13,20 @@ $font-second: 'Aref Ruqaa', serif;
 @function em($pixel, $contexto: 16) {
   @return $pixel / $contexto + em;
 }
+
+// Mixin Typography
+@mixin font-1($size) {
+  font-family: $font-primary;
+  @if $size == 18 {
+    font-size: em(18);
+    line-height: em(30, 18);
+  }
+}
+
+@mixin font-2($size) {
+  font-family: $font-second;
+  @if $size == 18 {
+    font-size: em(18);
+    line-height: em(30, 18);
+  }
+}
