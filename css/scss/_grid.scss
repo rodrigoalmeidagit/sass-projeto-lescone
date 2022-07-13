@@ -42,6 +42,11 @@ $s-device: 480px;
 }
 
 // Gerar Classes Grid
+@for $i from 1 through $columns {
+  .grid-#{$i} {
+    width: grid($i);
+  }
+}
 
 // Mixin Estrutura Grid
 
