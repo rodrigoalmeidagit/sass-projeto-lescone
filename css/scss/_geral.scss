@@ -1,0 +1,8 @@
+body {
+  background: $bg-color;
+  border: 10px solid $border-color;
+  color: $main-font-color;
+  @include device(small) {
+    border: none;
+  }
+}
