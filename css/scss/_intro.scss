@@ -1,0 +1,29 @@
+.intro {
+  margin-top: 60px;
+  @include device(small) {
+    margin-top: 20px;
+  }
+}
+
+.logo {
+  margin-bottom: 60px;
+}
+
+.intro-info {
+  border-right: 2px solid $main-font-color;
+  max-width: 320px;
+  p {
+    padding-top: 10px;
+  }
+}
+p:first-child {
+  border-bottom: 2px solid $main-font-color;
+  padding-bottom: 10px;
+}
+
+.intro-phone {
+  color: $second-font-color;
+  @include device(small) {
+    margin-bottom: 40px;
+  }
+}
