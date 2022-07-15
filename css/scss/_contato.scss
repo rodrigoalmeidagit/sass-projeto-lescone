@@ -32,3 +32,26 @@
     height: 120px;
   }
 }
+
+input.btn {
+  @include font-1(18);
+  cursor: pointer;
+  color: $second-font-color;
+  text-transform: uppercase;
+  border: 2px solid $second-font-color;
+  display: block;
+  background: transparent;
+  width: 200px;
+  padding-right: 5px;
+  @include box-shadow(
+    5px 5px 0 -2px $border-color,
+    5px 5px 0 0 $second-font-color
+  );
+  transition: 0.3s;
+  &:hover {
+    @include box-shadow(
+      3px 3px 0 -2px $border-color,
+      3px 3px 0 0 $second-font-color
+    );
+  }
+}
