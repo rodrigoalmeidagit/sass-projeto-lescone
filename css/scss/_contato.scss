@@ -67,3 +67,12 @@ input.btn {
     margin-top: -3em;
   }
 }
+
+.contact-map {
+  display: block;
+  @include box-shadow(0 0 0 10px $border-color);
+  clear: both;
+  img {
+    width: 100%;
+  }
+}
