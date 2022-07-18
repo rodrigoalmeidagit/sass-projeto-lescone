@@ -15,10 +15,10 @@
   p {
     padding-top: 10px;
   }
-}
-p:first-child {
-  border-bottom: 2px solid $main-font-color;
-  padding-bottom: 10px;
+  p:first-child {
+    border-bottom: 2px solid $main-font-color;
+    padding-bottom: 10px;
+  }
 }
 
 .intro-phone {
